@@ -1,0 +1,18 @@
+.fileint{
+    border: rgb(192, 190, 187) solid 1px;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 5px;
+}
+
+.k-label{
+    color: white;
+    /* text-align: center !important; */
+    margin-left: 15%;
+}
+.k-listgroup{
+    margin-left: 15%;
+}
+.droppdown:hover{
+    background-color: teal;
+}

@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import LogIn from './Components/Login/logIn';
+import Regst from './Components/Regst/Regst'
+import Customer from './Components/Customer/Customer'
+import Selaier from './Components/Selaier/Selaier'
+import Servies from './Components/Servies/Servies'
+import '@progress/kendo-theme-default/dist/all.css';
 import './App.css';
+import {BrowserRouter as Router, Switch,Route} from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   <Router>
+   {/* <LogIn/> */}
+   <Switch>
+    <Route path="/LogIn"  component={LogIn}/>
+    <Route path="/" exact  component={LogIn}/>
+     <Route path="/Regst"  component={Regst}/>
+     <Route path="/Customer"  component={Customer}/>
+     <Route path="/Selaier"  component={Selaier}/>
+     <Route path="/Servies"  component={Servies}/>
+   </Switch>
+   </Router>
+   </>
   );
 }
 

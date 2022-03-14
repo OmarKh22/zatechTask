@@ -1,0 +1,15 @@
+.Login{
+    color: aliceblue;
+}
+.linkey{
+    color: white;
+    font-size: 17px;
+}
+.btn btn-primary{
+    max-width: 80%;
+}
+.logo-text{
+    margin-left: 30%;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
